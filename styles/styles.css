@@ -1,6 +1,7 @@
 body{
     margin: 0;
     display: flex;
+    background-color: #789461;
 }
     aside{
         background-image: url(../images/stairs.jpg);
@@ -46,6 +47,28 @@ body{
             h2{
                 margin: 0;
                 padding: 0;
-            }       
+            }  
+            
+        form{
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            padding: 0 0 20px 50px;
+            background-color: #DBE7C9;
+        }
+        
+        fieldset{
+            display: flex;
+            border: 0;
+            gap: 60px;
+        }
+
+            .user-data{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 10px;
+            }
+
+            input{
+                width: 18vw;
+            }
 
             
