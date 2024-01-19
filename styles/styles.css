@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+    aside{
+        background-image: url(../images/stairs.jpg);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 30vw;
+        height: 100vh;
+        position: relative;
+    }
+
+        .logo-conteiner{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            top: 200px;
+            position: relative;
+            background-color: rgba(0, 0,0, 0.5);
+            height: 150px;
+        }
+
+            .logo{
+                width: 15vw;
+                height: 15vh;
+            }
+
+                h1{
+                    position: relative;
+                    right: 40px;
+                    color: aliceblue;
+                }
