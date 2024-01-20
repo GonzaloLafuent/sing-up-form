@@ -1,4 +1,10 @@
+@font-face {
+    font-family: Bebas;
+    src: url(../styles/fonts/BebasNeue.woff);
+}
+
 body{
+    font-family: Bebas;
     margin: 0;
     display: flex;
     background-color: #789461;
@@ -39,7 +45,7 @@ body{
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-            padding: 50px;
+            padding: 30px 50px 10px 50px;
             margin-right: 5%;
             height: 30%;   
             gap: 16px; 
@@ -51,12 +57,14 @@ body{
             
         form{
             box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-            padding: 0 0 20px 50px;
+            padding: 10px 0 20px 50px;
             background-color: #DBE7C9;
+            width: 70vw;
         }
         
         fieldset{
             display: flex;
+            padding: 0;
             border: 0;
             gap: 60px;
         }
@@ -67,8 +75,30 @@ body{
                 padding-bottom: 10px;
             }
 
-            input{
-                width: 18vw;
-            }
+                input{
+                    width: 18vw;
+                    border: 1px solid  rgba(0, 0, 5, 0.2);;
+                    border-radius: 16px;
+                }
 
+                input:focus{
+                    outline: 2px solid blue;           
+                }
+        
+        button{
+            position: relative;
+            right: -50px;
+            top: 20px;
+            width: 18vw;
+            height: 6vh;
+            font-family: inherit;
+            border: 1px solid  rgba(0, 0, 5, 0.2);;
+            border-radius: 16px;
+        }       
+
+        p{
+            position: relative;
+            right: -50px;
+            top: 20px;
+        }
             
