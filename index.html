@@ -24,44 +24,51 @@
                 <h2>You know you want to</h2>
             </div>
         </header>
-        <form action="">
+        <form novalidate>
             <h3>Lets do it!</h3>
             <fieldset>
                 <div class="user-data">
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first_name">
+                    <input required type="text" id="first-name" name="nombre" pattern="[a-zA-Z]*">
+                    <span class="error" aria-live="polite" id="span-name"></span>
                 </div>
                 <div class="user-data">
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="first-name" name="last_name">
+                    <input required type="text" id="last-name" name="apellido" pattern="[a-zA-Z]*">
+                    <span class="error" aria-live="polite" id="span-last-name"></span>
                 </div>
             </fieldset>
             <fieldset>
                 <div class="user-data">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <input required type="email" id="email" name="email" required minlength="8">
+                    <span class="error" aria-live="polite" id="span-email"></span>
                 </div>    
                 <div class="user-data">
                     <label for="phone-number">Phone number</label>
-                    <input type="text" id="phone-number" name="phone-number">
+                    <input required type="text" id="phone-number" pattern="\d{0,9}" name="telefono">
+                    <span class="error" aria-live="polite" id="span-phone"></span>
                 </div>    
             </fieldset>
             <fieldset>
                 <div class="user-data">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <input required type="password" name="contraseña" id="password">
+                    <span class="error" aria-live="polite" id="span-password"></span>
                 </div>    
                 <div class="user-data">
                     <label for="confirm-password">confirm-password</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
+                    <input required type="password" name="contraseña-confirm" id="confirm-password">
+                    <span class="error" aria-live="polite" id="span-confirm-password"></span>
                 </div>    
             </fieldset>
+            <button type="submit">Create Acount</button>
         </form>
         <footer>
-            <button type="submit">Create Acount</button>
             <p>Already have a account? <a href="">Log in</a></p>
         </footer>
     </div>   
 
 </body>
+<script src="./scripts/validation.js" ></script>
 </html>

@@ -82,9 +82,13 @@ body{
                 }
 
                 input:focus{
-                    outline: 2px solid blue;           
+                    outline: 2px solid yellow;           
                 }
-        
+
+                input:valid{
+                    border: 2px solid green;
+                }
+
         button{
             position: relative;
             right: -50px;
@@ -96,9 +100,30 @@ body{
             border-radius: 16px;
         }       
 
+        button{
+            position: relative;
+            top: 80px;
+            right: 3px;
+        }
         p{
             position: relative;
             right: -50px;
-            top: 20px;
+            top: 60px;
+        }
+
+        .error {
+            width: 18vw;
+            padding: 0;
+          
+            font-size: 80%;
+            color: white;
+            background-color: #900;
+            border-radius: 16px;
+          
+            
+          }
+          
+        .error.active {
+            padding: 0.3em;
         }
             
